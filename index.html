@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        #demo1{
+            width: 500px;
+            height: 300px;
+            background: #eee;
+        }
+    </style>
+    <link rel="stylesheet" href="css/jquery.carrousel.css">
 </head>
 <body>
 
-    <div id="demo"></div>
+    <div id="demo1" class="carrousel">
+        <div class="carrousel-content">
+            <div class="carrousel-item">
+                <img src="http://fs01.bokee.net/userfilespace/2014/07/10/shanxisenhe20696627.jpg">
+            </div>
+            <div class="carrousel-item">
+                <img src="http://fs01.bokee.net/userfilespace/2014/07/10/shanxisenhe20696627.jpg">
+            </div>
+            <div class="carrousel-item">
+                <img src="http://xddzs.net/uploads/allimg/130813/10-130Q31GJU17.jpg">
+            </div>
+            <div class="carrousel-item">
+                <img src="http://www.sjyx.com/wp-content/uploads/2017/06/327e1809-8dc0-4b7f-949b-27b365365024.jpg">
+            </div>
+        </div>
+        <div class="carrousel-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div class="carrousel-pre">Pre</div>
+        <div class="carrousel-next">Next</div>
+    </div>
 
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.carrousel.js"></script>
+    <script type="text/javascript">
+        $('#demo1').carrousel();
+    </script>
 </body>
 </html>
