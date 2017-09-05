@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <title>Carrousel</title>
+
+    <link rel="stylesheet" href="css/jquery.carrousel.css" />
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             margin: 0;
         }
-
         #demo1{
-            width: 500px;
-            height: 300px;
-            background: #eee;
+            width:500px;
+            height:300px;
         }
     </style>
-    <link rel="stylesheet" href="css/jquery.carrousel.css">
 </head>
 <body>
 
-    <div id="demo1" class="carrousel">
-        <div class="carrousel-content">
-            <div class="carrousel-item">
-                <img src="http://fs01.bokee.net/userfilespace/2014/07/10/shanxisenhe20696627.jpg">
-            </div>
-            <div class="carrousel-item">
-                <img src="http://upload.mnw.cn/2016/0904/1472962632270.jpg">
-            </div>
-            <div class="carrousel-item">
-                <img src="http://xddzs.net/uploads/allimg/130813/10-130Q31GJU17.jpg">
-            </div>
-            <div class="carrousel-item">
-                <img src="http://www.sjyx.com/wp-content/uploads/2017/06/327e1809-8dc0-4b7f-949b-27b365365024.jpg">
-            </div>
+<div class="carrousel" id="demo1">
+    <div class="carrousel-content">
+        <div class="content-item">
+            <img src="img/1.jpg">
         </div>
-        <div class="carrousel-dots">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="content-item">
+            <img src="img/2.gif">
         </div>
-        <div class="carrousel-pre">Pre</div>
-        <div class="carrousel-next">Next</div>
+        <div class="content-item">
+            <img src="img/3.gif">
+        </div>
+        <div class="content-item">
+            <img src="img/4.jpg">
+        </div>
     </div>
+</div>
 
-
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.carrousel.js"></script>
-    <script type="text/javascript">
-        $('#demo1').carrousel();
-    </script>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/jquery.carrousel.js" ></script>
+<script type="text/javascript">
+    $('#demo1').carrousel();
+</script>
 </body>
 </html>
